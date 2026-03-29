@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Link Tester – Blocked?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="wrapper">
+<h1>Link Tester</h1>
+
+<div class="controls">
+  <input id="url" type="url" placeholder="https://example.com" size="40">
+  <select id="district">
+    <option value="global">Global (any)</option>
+    <option value="KR">South Korea</option>
+    <option value="US">USA</option>
+    <option value="CN">China</option>
+    <option value="EU">Europe (any)</option>
+  </select>
+  <select id="blocker">
+    <option value="None">None</option>
+    <option value="Custom Blocklist">Custom Blocklist</option>
+  </select>
+  <button id="testBtn">Test Link</button>
+</div>
+
+<pre id="result" class="hidden"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
